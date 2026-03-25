@@ -1,0 +1,29 @@
+﻿@model Hospital
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-body border-bottom bg-light">
+                    <h4 class="card-title mb-0 text-primary">@Model.Nombre</h4>
+                    <small class="text-muted">ID del Centro: #@Model.IdHospital</small>
+                </div>
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-center py-3">
+                        <span class="fw-bold text-secondary">Dirección</span>
+                        <span class="text-end">@Model.Direccion</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center py-3">
+                        <span class="fw-bold text-secondary">Teléfono</span>
+                        <span>@Model.Telefono</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center py-3">
+                        <span class="fw-bold text-secondary">Capacidad</span>
+                        <span class="badge bg-primary rounded-pill">@Model.Camas Camas</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
